@@ -1,0 +1,57 @@
+body{
+    overflow-x: hidden;
+}
+
+.paralax{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+
+.paralax-item{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.p-item2{
+    width: 100vw;
+    height: 100vh;
+    transform: translateY(100%);
+    z-index: 1;
+    position: relative; /* Add this line */
+}
+
+.p-item3{
+    background: url(/img/m_3.png) bottom/100% no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.p-item4{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: url("/img/m_4.png") repeat-x;
+    background-size: cover;
+    background-position: center;
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee{
+    0%{
+        transform: translate3d(100%,0,0);
+    }
+
+    100%{
+        transform: translate3d(-100vw,0,0);
+    }
+}

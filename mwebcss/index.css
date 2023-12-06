@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif, Arial;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:  100vh;
+}
+.banner{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient( rgba(0, 58, 108),rgba(0,0,139,0.5),rgba(45, 166, 213, 0.2)), url(/img/Addubg.jpg);
+}
+
+.TopContent{
+    width: 100vw;
+    float: right;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: aliceblue;
+}
+
+.TopContent h1{
+    font-size: 100px;
+    margin-top: 80px;
+    margin-left: 35%;
+    text-align: left;
+}
+.TopContent p{
+    margin: 1px auto;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 25px;
+    text-align: left;
+    margin-left: 35%;
+    text-shadow: 2px 2px 8px rgb(85, 85, 171);
+    font-family: 'Saunde';
+}
+
+@font-face {
+    font-family: 'Saunde';
+    src: url('/Fonts/Saunde.otf') format('truetype');
+}
+  
+
+

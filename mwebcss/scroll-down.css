@@ -1,0 +1,45 @@
+.scroll-down {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    opacity: 1;
+    transition: opacity 0.5s ease; /* Add transition property for opacity */
+    z-index: 10;
+    color: #fff;
+    font-size: 30px;
+    animation: bounce 2s infinite;
+}
+
+.scrolltext {
+    margin-left: -5%;
+    margin-bottom: -3%;
+    font-size: 20px;
+}
+
+.arrow {
+    width: 10%;
+    align-self: center;
+}
+
+.hide-scroll-down {
+    opacity: 0; /* No need for "px" here */
+    pointer-events: none;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Add transition for .scrolltext and .arrow */
+.scroll-down .scrolltext,
+.scroll-down .arrow {
+    transition: opacity 0.5s ease;
+}

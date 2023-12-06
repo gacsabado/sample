@@ -1,0 +1,377 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: var(--bg-color);
+}
+
+/*-- MY WEBSITE --*/
+  .header {
+    padding: 380px;
+    text-align: center;
+    background-image: url(/img/m_1.png);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+  }
+
+  .header h1 {
+    font-size: 40px;
+    opacity: 0; /* Initial opacity set to 0 */
+    transition: opacity 0.5s ease; /* Transition for opacity */
+  }
+
+  .header.fade-in h1{
+    opacity: 1;
+  }
+
+  .header p{
+    opacity: 0; /* Initial opacity set to 0 */
+    transition: opacity 0.5s ease; /* Transition for opacity */
+  }
+
+  .header.fade-in p{
+    opacity: 1;
+  }
+/*-- END --*/
+
+
+
+.square {
+  margin-top: -10%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.sq1, .sq2, .sq3, .sq4 {
+  width: 350px;
+  height: 350px;
+  color: none;
+  color: var(--font-color);
+  background: none;
+  background-color: var(--box-color);
+  transition: background-color 0.3s ease;
+  border-radius: 30px;
+  /* Center the content */
+  display: flex;
+  flex-direction: column; /* Arrange children in a column */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure content doesn't overflow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Optional: Add some styling to the h1 elements */
+.sq1 h1, .sq2 h1, .sq3 h1, .sq4 h1 {
+  margin: 40px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.sq1 img, .sq2 img, .sq3 img, .sq4 img {
+  max-width: 100%;
+  height: auto;
+  margin-top: -100px;
+}
+
+/*---------- DARK MODE ----------*/
+
+:root {
+   --font-color: #fefefe;
+  --bg-color: #1e1e1e;
+  --box-color: #3a2a2a;
+  --hover-color: #4158D0;
+}
+
+[data-theme="light"] {
+  --font-color: #0f0f0f;
+  --bg-color: white;
+  --box-color: #f0f8ff;
+  --hover-color: #4158D0; 
+}
+
+.switch {
+  height: 100px;
+  right: 50px;
+  top: 50px;
+  z-index: 10000;
+}
+  
+.theme-switch {
+display: inline-block;
+height: 34px;
+position: relative;
+width: 60px;
+}
+
+.theme-switch input {
+display:none;
+}
+
+.slider {
+background-color:  #2b2b2b;
+bottom: 0;
+cursor: pointer;
+left: 0;
+position: absolute;
+right: 0;
+top: 0;
+transition: .4s;
+}
+
+.slider:before {
+background-color: #fff;
+bottom: 4px;
+content: "";
+height: 26px;
+left: 4px;
+position: absolute;
+transition: .4s;
+width: 26px;
+z-index: 10000;
+}
+
+input:checked + .slider {
+background-color: #ccc;
+}
+
+input:checked + .slider:before {
+transform: translateX(26px);
+}
+
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+
+/*---------- END ----------*/
+
+
+/*--CONTENT--*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 20%;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 26%, #FFCC70 100%);
+  padding: 20px;
+  border-radius: 20px;
+  margin-left: 3%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.side h1{
+  margin-top: -17%;
+  color: white;
+  font-size: 50px;
+  text-shadow: 1px 1px 10px rgb(0, 0, 0.5);
+  text-align: center;
+}
+
+.side p{
+  margin: 10px;
+  color: none;
+  color: var(--font-color);
+}
+
+.aboutme{
+  background: none;
+  background-color: var(--box-color);
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  width: 300px;
+  height: fit-content;
+  padding: 10px;
+}
+
+.indented-text{
+  margin-top: 10px;
+  background: none;
+  background-color: var(--box-color);
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  width: 300px;
+  height: fit-content;
+  padding: 10px;
+}
+.indented-text ul {
+  color: none;
+  color: var(--font-color);
+  list-style-type: none;
+  padding-left: 40px; /* Adjust the value according to your preference */
+}
+
+.indented-text li {
+  color: none;
+  color: var(--font-color);
+  margin-bottom: 5px; /* Optional: Adds some space between the list items */
+}
+
+.sidepic{
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/*--- MAIN CONTENT ---*/
+
+.main {
+  flex: 70%;
+  padding: 20px;
+  text-align: justify;
+  text-indent: 20px;
+}
+
+.main h1{
+  margin:10px;
+  color: none;
+  color: var(--font-color);
+}
+
+.main p{
+  margin:10px;
+  padding-left: 10px;
+  padding: 10px;
+  color: none;
+  color: var(--font-color);
+  background: none;
+  background-color: var(--box-color);
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.landscape-container {
+  width: 1020px; /* Set the desired width for the landscape container */
+  height: 500px; /* Set the desired height for the landscape container */
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.landscape-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover; /* This will crop the image to cover the container */
+}
+
+.fakeimg {
+  background: linear-gradient(
+    to right, #4158D0 0%, 
+    #C850C0 20%, #eaa82f 100%);
+  background-size: 200% 200% ;
+  animation: animate-bg 10s infinite ease-in-out;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  font-size: 50px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;  
+}
+
+@keyframes animate-bg{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
+.fakeimg h1 {
+  color: white;
+  font-family: 'Moonlight Sonata';
+  font-size: 2em;
+  opacity: 0;
+  animation: fadeInOut 40s linear infinite;
+  position: absolute;
+}
+
+.fakeimg h1:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.fakeimg h1:nth-child(2) {
+  animation-delay: 10s; /* Adjusted delay to create a sequence */
+}
+
+.fakeimg h1:nth-child(3) {
+  animation-delay: 20s; /* Adjusted delay to create a sequence */
+}
+
+.fakeimg h1:nth-child(4) {
+  animation-delay: 30s; /* Adjusted delay to create a sequence */
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10%, 25% {
+    opacity: 1;
+  }
+  35%, 100% {
+    opacity: 0;
+  }
+}
+
+/*--END CONTENT--*/
+
+.self-reflection {
+  margin: 5% auto; /* Center the element horizontally and provide top margin */
+  text-align: center;
+  width: 70%;
+  padding: 20px;
+  background: none;
+  background-color: var(--box-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+}
+
+.self-reflection p {
+  margin: 20px;
+  font-size: 18px;
+  color: var(--font-color);
+}
+
+.self-reflection p:first-child {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--font-color);
+}
+
+
+
+@font-face {
+  font-family: 'Moonlight Sonata' ;
+  src: url('/MoonlightSonata-axrmx.ttf');
+  font-family:'Rythem' ;
+  src: url('/RhythemSignature-GO8vg.ttf');
+}

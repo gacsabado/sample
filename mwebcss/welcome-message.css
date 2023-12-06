@@ -1,0 +1,29 @@
+#welcome-message {
+  position: fixed;
+  top: 53%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  z-index: 1001; /* Set a higher z-index value to ensure it appears on top */
+  font-size: 25px;
+  text-align: center;
+}
+
+#welcome-message h1{
+  font-family: 'Moonlight Sonata';
+  font-size: 80px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
+#welcome-message.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@font-face {
+  font-family: 'Moonlight Sonata';
+  src: url('/MoonlightSonata-axrmx.ttf') format('truetype');
+}
+  

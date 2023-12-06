@@ -1,0 +1,38 @@
+.navbar{
+    margin: auto;
+    top: 0;
+    width: 95%;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color:  rgba(0, 58, 108,0);
+}
+.logo{
+    width: 10%;
+    cursor: pointer;
+    transition: transform .3s;
+}
+.logo:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.navbar ul li:hover{
+    background-color: darkblue;
+    border: none;
+    padding: 16px 25px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+}

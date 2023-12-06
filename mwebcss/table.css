@@ -1,0 +1,141 @@
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 0px; /* Adjust the gap as needed */
+    margin-top: 175px;
+}
+
+#tabs {
+    display:flex;#container {
+        display: grid;
+        margin-top: 175px;
+    }
+    
+    #tabs {
+        display: flex;
+        margin-bottom: 20px;
+        flex-direction: column; /* Display buttons in a column */
+        align-items: center; /* Center align buttons horizontally */
+    }
+    
+    .tab {
+        margin: 10px 10px;
+        cursor: pointer;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        box-shadow: 0 0 10px rgba(1, 0, 0, 0.3);
+        width: 50%; /* Make buttons take up full width */
+        padding: 35px; /* Adjust padding as needed */
+    }
+    
+    /* Different background for each button */
+    .tab:hover:nth-child(1) {
+        background-color: #e74c3c; 
+    }
+    
+    .tab:hover:nth-child(2) {
+        background-color: #27ae60; 
+    }
+    
+    .tab:hover:nth-child(3) {
+        background-color: #f39c12; 
+    }
+    
+    .tab:hover:nth-child(4) {
+        background-color: #8e44ad; 
+    }
+
+    margin-bottom: 20px;
+    flex-direction: column; /* Display buttons in a column */
+    align-items: center; /* Center align buttons horizontally */
+}
+
+#Description{
+    background-color: rgb(255, 255, 255,0.2);
+    width: auto;
+    height: auto;
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(1, 0, 0, 0.3);
+    text-align: center;
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-right: 5%;
+}
+
+.case1 h1{
+    text-align: center;
+    text-shadow: 1px 1px 10px #000000;
+    color: lime;
+}
+.case1{
+    text-align: left;
+}
+.case1 ol{
+    margin-left: 10%;
+}
+
+.link{
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+
+.case2 h1{
+    text-align: center;
+    text-shadow: 1px 1px 10px #000000;
+    color: lime;
+}
+.case2{
+    text-align: left;
+}
+.case2 ol{
+    margin-left: 10%;
+}
+
+.link{
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+.case3 h1{
+    text-align: center;
+    text-shadow: 1px 1px 10px #000000;
+    color: lime;
+}
+.case3{
+    text-align: left;
+}
+.case3 ol{
+    margin-left: 10%;
+}
+
+.link{
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+.case4 h1{
+    text-align: center;
+    text-shadow: 1px 1px 10px #000000;
+    color: lime;
+}
+.case4{
+    text-align: left;
+}
+.case4 ol{
+    margin-left: 10%;
+}
+
+.case4 ol p{
+    margin-left: 5%;
+}
+
+.link{
+    padding: 20px;
+    background-color: aliceblue;
+}
+
